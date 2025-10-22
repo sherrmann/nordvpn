@@ -9,6 +9,19 @@
 
 Official `NordVPN` client in a docker container; it makes routing traffic through the `NordVPN` network easy and secure with an integrated iptables kill switch.
 
+# About This Fork
+
+This is a maintained fork of the original [bubuntux/nordvpn](https://github.com/bubuntux/nordvpn) repository. The Docker images are automatically built and published to:
+- **GitHub Container Registry**: `ghcr.io/sherrmann/nordvpn`
+- **Docker Hub**: `sherrmann/nordvpn`
+
+Images are built for multiple platforms:
+- `linux/amd64` (x86_64)
+- `linux/arm64` (ARM 64-bit)
+- `linux/arm/v7` (ARM 32-bit)
+
+The latest version uses **NordVPN 4.1.1** and is based on Ubuntu Noble.
+
 # How to use this image
 This container was designed to be started first to provide a connection to other containers (using `--net=container:vpn`, see below *Starting an NordVPN client instance*).
 
